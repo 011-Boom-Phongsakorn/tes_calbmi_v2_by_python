@@ -22,7 +22,8 @@ class TestCalbmi(unittest.TestCase):
         self.driver.find_element(By.NAME, "btnK").click()
         self.driver.find_element(By.CSS_SELECTOR, "#ixcYae .LC20lb").click()
         # self.driver.find_element(By.ID, "menuon").click()
-        self.driver.find_element(By.XPATH, "//li[@id='menuon']/a").click()
+        self.driver.find_element(By.CSS_SELECTOR, "#menuon > a").click()
+        # self.driver.find_element(By.XPATH, "//li[@id='menuon']/a").click()
 
         # กรอกข้อมูล: อายุ, ความสูง, น้ำหนัก
         age_field = self.driver.find_element(By.ID, "cage")
